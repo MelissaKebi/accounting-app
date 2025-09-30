@@ -1,0 +1,20 @@
+/* Tailwind v4 */
+@import "tailwindcss";
+
+/* Print-friendly A4 */
+@media print {
+  @page {
+    size: A4;
+    margin: 16mm;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .avoid-break {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  body {
+    background: white !important;
+  }
+}
